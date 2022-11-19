@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         //TAP1 (1 DEN 10 A QEDER EDEDLERIN CEMI)
+         var cem=0;
+        for( var say=1; say<=10; say++){
+            cem+=say
+        }
+        alert(cem);
+
+        //(1 DEN 10 A QEDER EDEDLERIN HASILI)
+         var hasil=1;
+        for(var say=1; say<=10; say++ ){
+            hasil*=say
+        }
+        alert(hasil)
+
+       
+
+        //TAP2(1 DEN YUZE QEDER CUT EDEDLERI TAP)
+        for(var eded=1; eded<=100 ; eded++){
+            if(eded%2==0){
+                alert(eded);
+            }
+        }
+
+       // 1 den 100 e cut edelerin cemini tap
+        cem=0;
+        for(var eded=1; eded<=100; eded++){
+            if(eded%2==0){
+                cem+=eded;
+            }
+        }
+        alert(cem);
+
+        //1 den 100 e cut edelerin hasili
+        hasil=1;
+        for(var eded=1; eded<=100; eded++){
+            if(eded%2==0){
+                hasil*=eded;
+            }
+        }
+        alert(hasil);
+
+        //TAP3(3 REQEMLI EDELERIN EDEDI ORTASINI TAP)
+        var edediOrta;
+        var say=900;
+        var cem=0;
+        for( var eded=100; eded<=999; eded++){
+            cem+=eded;
+        }
+        edediOrta= cem/say;
+        alert(edediOrta);
+
+        //TAP4 (3REQEMLI EDEDLERDEN 7 VE 8 E  BOLUNEN EDED)
+            for( var eded=100; eded<=999; eded++){
+                if(eded%7==0 && eded%8==0){
+                    alert(eded);
+                }
+            }
+
+        //Tap5 (3 reqemli ededlerden  7 ve 8 e bolunenlerin cemini tap)
+         var cem=0;
+        for( var eded=100 ; eded<=999; eded++){
+            if(eded%7==0 && eded%8==0){
+                cem+=eded;
+            }
+        }
+        alert(cem);
+        
+        // TAP 6 (3 REQEMLI EDEDLERDEN  7 VE 8 E BOLUNEN ILK EDEDI TAPIN)
+            for(var eded=100; eded<=999; eded++){
+                if(eded%7==0 && eded%8==0){
+                    alert(eded);
+                    break;
+                   
+                }console.log(`${eded} - sadedir`)
+            }
+
+
+        //TAP 7(1 DEN 100 E QEDER SADE VE MUREKKEB EDEDLERI TAPIN)
+        var sadedir=true;
+        for(var eded=1; eded<=100; eded++){ //bolduyun eded
+          
+            for(var a=2 ; a<eded; a++){ // boleceyin ededler
+                if( eded%a==0){
+                    sadedir=false;
+                }
+            }
+
+            if(sadedir){
+                console.log(`${eded} - sadedir`)
+            }
+            else{
+                console.log(`${eded} - sade deyil`)
+
+            }
+            sadedir=true;
+
+        }
+
+        //  TAP 8 (VERILMIS  EDEDDEN EN BOYUYUNU TAPIN)
+        var a=3;    
+        var b=5;
+        var c=6;
+        if(a>b && b>c){
+            alert("a en boyuk ededdir");
+        }
+        else if(b>a && a>c){
+            alert("b en boyuk ededdir")
+        }
+        else{
+            alert("en boyuyu c dir")
+        }
+
+        // VERILMIS  EDEDDEN EN KICIYINI TAPIN
+        var a=34;    
+        var b=5;
+        var c=6;
+        if(a<b && b<c){
+            console.log(`${a} en kicikdir`)
+        }
+        else if(b<a && a<c){
+            console.log(`${b} en kicikdir`)
+        }
+        else{
+            console.log(`${c} en kicikdir`)
+        }
+
+    </script>
+</body>
+</html>
